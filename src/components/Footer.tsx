@@ -1,4 +1,5 @@
 import { Phone, Mail, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import auraPathLogo from "@/assets/aura-path-logo.png";
 
 const footerLinks = {
   services: [
@@ -34,13 +35,8 @@ export const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 bg-gold rounded-lg flex items-center justify-center">
-                <span className="text-navy font-serif font-bold text-xl">A</span>
-              </div>
-              <div>
-                <h3 className="font-serif font-bold text-xl">AURA PATH</h3>
-                <p className="text-xs text-cream/60 tracking-wider">CONSULTANCY</p>
-              </div>
+              <img src={auraPathLogo} alt="AURA PATH CONSULTANCY" className="h-14 w-auto object-contain" />
+              <h3 className="font-serif font-bold text-xl">AURA PATH CONSULTANCY ✔️</h3>
             </div>
             <p className="text-cream/70 text-sm leading-relaxed mb-6">
               India's Premier Educational Consultancy dedicated to helping students 
@@ -120,7 +116,7 @@ export const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-cream/60 text-sm">
-              © {new Date().getFullYear()} AURA PATH CONSULTANCY. All rights reserved.
+              © {new Date().getFullYear()} AURA PATH CONSULTANCY ✔️. All rights reserved.
             </p>
             <div className="flex gap-6">
               <span className="text-cream/60 text-sm hover:text-gold transition-colors cursor-pointer">
