@@ -186,6 +186,25 @@
             drop-shadow(0 0 36px hsl(30 45% 55% / 0.3));
   }
 
+  /* Remove white background from logo */
+  .logo-no-bg {
+    mix-blend-mode: multiply;
+  }
+
+  /* For dark backgrounds, use darken mode */
+  .logo-no-bg-dark {
+    mix-blend-mode: screen;
+    filter: invert(1) drop-shadow(0 0 8px hsl(30 45% 55% / 0.6)) 
+            drop-shadow(0 0 16px hsl(30 45% 55% / 0.4))
+            drop-shadow(0 0 24px hsl(30 45% 55% / 0.2));
+  }
+
+  .logo-no-bg-dark:hover {
+    filter: invert(1) drop-shadow(0 0 12px hsl(30 45% 55% / 0.8)) 
+            drop-shadow(0 0 24px hsl(30 45% 55% / 0.5))
+            drop-shadow(0 0 36px hsl(30 45% 55% / 0.3));
+  }
+
   .logo-container {
     position: relative;
   }

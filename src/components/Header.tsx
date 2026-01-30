@@ -70,8 +70,7 @@ export const Header = () => {
                 <img 
                   src={auraPathLogo} 
                   alt="Aura Path Consultancy Logo" 
-                  className="h-14 w-auto object-contain logo-glow"
-                  style={{ background: 'transparent' }}
+                  className="h-14 w-auto object-contain logo-glow logo-no-bg"
                 />
               </div>
               <div className="hidden sm:block">
