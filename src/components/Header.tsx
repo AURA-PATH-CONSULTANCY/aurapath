@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "./ui/button";
-import auraPathLogo from "@/assets/aura-path-logo.png";
+import auraPathLogo from "@/assets/aura-path-logo-new.png";
 
 const navLinks = [
   { name: "Home", href: "#home" },
@@ -66,11 +66,14 @@ export const Header = () => {
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
             <a href="#home" className="flex items-center gap-3">
-              <img 
-                src={auraPathLogo} 
-                alt="Aura Path Consultancy Logo" 
-                className="h-14 w-auto object-contain"
-              />
+              <div className="logo-container">
+                <img 
+                  src={auraPathLogo} 
+                  alt="Aura Path Consultancy Logo" 
+                  className="h-14 w-auto object-contain logo-glow"
+                  style={{ background: 'transparent' }}
+                />
+              </div>
               <div className="hidden sm:block">
                 <h1 className="font-serif font-bold text-navy text-lg leading-tight">
                   AURA PATH CONSULTANCY ✔️

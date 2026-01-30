@@ -172,6 +172,44 @@
   .bg-cream {
     background-color: hsl(var(--cream));
   }
+
+  .logo-glow {
+    filter: drop-shadow(0 0 8px hsl(30 45% 55% / 0.6)) 
+            drop-shadow(0 0 16px hsl(30 45% 55% / 0.4))
+            drop-shadow(0 0 24px hsl(30 45% 55% / 0.2));
+    transition: filter 0.3s ease;
+  }
+
+  .logo-glow:hover {
+    filter: drop-shadow(0 0 12px hsl(30 45% 55% / 0.8)) 
+            drop-shadow(0 0 24px hsl(30 45% 55% / 0.5))
+            drop-shadow(0 0 36px hsl(30 45% 55% / 0.3));
+  }
+
+  .logo-container {
+    position: relative;
+  }
+
+  .logo-container::before {
+    content: '';
+    position: absolute;
+    inset: -10px;
+    background: radial-gradient(ellipse at center, hsl(30 45% 55% / 0.15) 0%, transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
+  @keyframes pulseGlow {
+    0%, 100% {
+      opacity: 0.6;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 1;
+      transform: scale(1.1);
+    }
+  }
 }
 
 @layer utilities {
