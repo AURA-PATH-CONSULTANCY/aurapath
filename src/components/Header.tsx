@@ -65,16 +65,16 @@ export const Header = () => {
         <div className="container mx-auto px-4">
           <div className="flex items-center justify-between h-20">
             {/* Logo */}
-            <a href="#home" className="flex items-center gap-3">
+            <a href="#home" className="flex items-center gap-3 group">
               <div className="logo-container">
                 <img 
                   src={auraPathLogo} 
                   alt="Aura Path Consultancy Logo" 
-                  className="h-14 w-auto object-contain logo-glow logo-no-bg"
+                  className="h-16 w-auto object-contain logo-glow logo-no-bg"
                 />
               </div>
               <div className="hidden sm:block">
-                <h1 className="font-serif font-bold text-navy text-lg leading-tight">
+                <h1 className="font-serif font-bold text-navy text-lg leading-tight group-hover:text-gold transition-colors">
                   AURA PATH CONSULTANCY ✔️
                 </h1>
               </div>

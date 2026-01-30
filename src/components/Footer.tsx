@@ -34,15 +34,15 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <div className="flex items-center gap-3 mb-6">
+            <div className="flex items-center gap-3 mb-6 group cursor-pointer">
               <div className="logo-container">
                 <img 
                   src={auraPathLogo} 
                   alt="AURA PATH CONSULTANCY" 
-                  className="h-14 w-auto object-contain logo-no-bg-dark"
+                  className="h-16 w-auto object-contain logo-no-bg-dark"
                 />
               </div>
-              <h3 className="font-serif font-bold text-xl">AURA PATH CONSULTANCY ✔️</h3>
+              <h3 className="font-serif font-bold text-xl group-hover:text-gold transition-colors">AURA PATH CONSULTANCY ✔️</h3>
             </div>
             <p className="text-cream/70 text-sm leading-relaxed mb-6">
               India's Premier Educational Consultancy dedicated to helping students 
