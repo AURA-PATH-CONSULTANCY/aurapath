@@ -16,7 +16,7 @@ export const Contact = () => {
   };
 
   return (
-    <section id="contact" className="py-20 md:py-28 bg-cream">
+    <section id="contact" className="py-20 md:py-28 bg-secondary">
       <div className="container mx-auto px-4" ref={ref}>
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-20">
           {/* Left - Contact Info */}
@@ -25,8 +25,8 @@ export const Contact = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-gold font-semibold tracking-wider text-sm uppercase">Contact Us</span>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-navy mt-3 mb-6">
+            <span className="text-primary font-semibold tracking-wider text-sm uppercase">Contact Us</span>
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6">
               Ready to Start Your
               <span className="text-gradient-gold block">Brighter Future?</span>
             </h2>
@@ -41,12 +41,12 @@ export const Contact = () => {
                 href="tel:+910000000000"
                 className="flex items-center gap-4 group"
               >
-                <div className="w-14 h-14 bg-navy rounded-xl flex items-center justify-center group-hover:bg-gold transition-colors duration-300">
-                  <Phone className="w-6 h-6 text-gold group-hover:text-navy transition-colors duration-300" />
+                <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center group-hover:bg-accent transition-colors duration-300">
+                  <Phone className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="text-lg font-semibold text-navy">+91 0000000000</p>
+                  <p className="text-lg font-semibold text-foreground">+91 0000000000</p>
                 </div>
               </a>
 
@@ -54,22 +54,22 @@ export const Contact = () => {
                 href="mailto:contact@aurapathedu.in"
                 className="flex items-center gap-4 group"
               >
-                <div className="w-14 h-14 bg-navy rounded-xl flex items-center justify-center group-hover:bg-gold transition-colors duration-300">
-                  <Mail className="w-6 h-6 text-gold group-hover:text-navy transition-colors duration-300" />
+                <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center group-hover:bg-accent transition-colors duration-300">
+                  <Mail className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-lg font-semibold text-navy">contact@aurapathedu.in</p>
+                  <p className="text-lg font-semibold text-foreground">contact@aurapathedu.in</p>
                 </div>
               </a>
 
               <div className="flex items-center gap-4">
-                <div className="w-14 h-14 bg-navy rounded-xl flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-gold" />
+                <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-primary-foreground" />
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Location</p>
-                  <p className="text-lg font-semibold text-navy">India</p>
+                  <p className="text-lg font-semibold text-foreground">India</p>
                 </div>
               </div>
             </div>
@@ -82,7 +82,7 @@ export const Contact = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
           >
             <div className="bg-card rounded-2xl shadow-elevated p-8 border border-border">
-              <h3 className="font-serif text-2xl font-bold text-navy mb-6">Get Free Consultation</h3>
+              <h3 className="font-serif text-2xl font-bold text-foreground mb-6">Get Free Consultation</h3>
               
               {isSubmitted ? (
                 <motion.div
@@ -90,50 +90,50 @@ export const Contact = () => {
                   animate={{ scale: 1, opacity: 1 }}
                   className="flex flex-col items-center justify-center py-12 text-center"
                 >
-                  <div className="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mb-4">
-                    <CheckCircle className="w-8 h-8 text-green-600" />
+                  <div className="w-16 h-16 bg-green-500/20 rounded-full flex items-center justify-center mb-4">
+                    <CheckCircle className="w-8 h-8 text-green-500" />
                   </div>
-                  <h4 className="font-serif text-xl font-bold text-navy mb-2">Thank You!</h4>
+                  <h4 className="font-serif text-xl font-bold text-foreground mb-2">Thank You!</h4>
                   <p className="text-muted-foreground">We'll get back to you shortly.</p>
                 </motion.div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-5">
                   <div className="grid sm:grid-cols-2 gap-5">
                     <div>
-                      <label className="text-sm font-medium text-navy mb-2 block">Full Name</label>
+                      <label className="text-sm font-medium text-foreground mb-2 block">Full Name</label>
                       <input
                         type="text"
                         required
                         placeholder="Your name"
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all placeholder:text-muted-foreground"
                       />
                     </div>
                     <div>
-                      <label className="text-sm font-medium text-navy mb-2 block">Phone Number</label>
+                      <label className="text-sm font-medium text-foreground mb-2 block">Phone Number</label>
                       <input
                         type="tel"
                         required
                         placeholder="+91 XXXXX XXXXX"
-                        className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all"
+                        className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all placeholder:text-muted-foreground"
                       />
                     </div>
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium text-navy mb-2 block">Email Address</label>
+                    <label className="text-sm font-medium text-foreground mb-2 block">Email Address</label>
                     <input
                       type="email"
                       required
                       placeholder="your@email.com"
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all placeholder:text-muted-foreground"
                     />
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium text-navy mb-2 block">Course Interested In</label>
+                    <label className="text-sm font-medium text-foreground mb-2 block">Course Interested In</label>
                     <select
                       required
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all"
+                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all"
                     >
                       <option value="">Select a course</option>
                       <option value="ug">Undergraduate (UG)</option>
@@ -146,11 +146,11 @@ export const Contact = () => {
                   </div>
 
                   <div>
-                    <label className="text-sm font-medium text-navy mb-2 block">Message</label>
+                    <label className="text-sm font-medium text-foreground mb-2 block">Message</label>
                     <textarea
                       rows={4}
                       placeholder="Tell us about your educational goals..."
-                      className="w-full px-4 py-3 rounded-lg border border-border bg-background focus:outline-none focus:ring-2 focus:ring-gold/50 focus:border-gold transition-all resize-none"
+                      className="w-full px-4 py-3 rounded-lg border border-border bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary/50 focus:border-primary transition-all resize-none placeholder:text-muted-foreground"
                     />
                   </div>
 

@@ -68,7 +68,7 @@ export const Services = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   return (
-    <section id="services" className="py-20 md:py-28 bg-cream">
+    <section id="services" className="py-20 md:py-28 bg-secondary">
       <div className="container mx-auto px-4" ref={ref}>
         {/* Header */}
         <motion.div
@@ -77,8 +77,8 @@ export const Services = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-gold font-semibold tracking-wider text-sm uppercase">Our Services</span>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-navy mt-3 mb-6">
+          <span className="text-primary font-semibold tracking-wider text-sm uppercase">Our Services</span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6">
             Comprehensive Education
             <span className="text-gradient-gold block">Consultancy Services</span>
           </h2>
@@ -96,12 +96,12 @@ export const Services = () => {
               initial={{ opacity: 0, y: 30 }}
               animate={isInView ? { opacity: 1, y: 0 } : {}}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="bg-card p-6 rounded-xl shadow-card-hover border border-border/50 group hover:border-gold/30 transition-all duration-300"
+              className="bg-card p-6 rounded-xl shadow-card-hover border border-border group hover:border-primary/30 transition-all duration-300"
             >
               <div className={`w-14 h-14 rounded-xl bg-gradient-to-br ${service.color} flex items-center justify-center mb-5 group-hover:scale-110 transition-transform duration-300`}>
-                <service.icon className="w-7 h-7 text-navy" />
+                <service.icon className="w-7 h-7 text-foreground" />
               </div>
-              <h3 className="font-serif font-semibold text-lg text-navy mb-3">{service.title}</h3>
+              <h3 className="font-serif font-semibold text-lg text-foreground mb-3">{service.title}</h3>
               <p className="text-muted-foreground text-sm leading-relaxed">{service.description}</p>
             </motion.div>
           ))}
@@ -114,8 +114,8 @@ export const Services = () => {
           transition={{ duration: 0.6, delay: 0.8 }}
           className="mt-12 text-center"
         >
-          <p className="text-navy font-medium">
-            ✨ All services come with <span className="text-gold font-semibold">FREE expert guidance</span> and transparent processes
+          <p className="text-foreground font-medium">
+            ✨ All services come with <span className="text-primary font-semibold">FREE expert guidance</span> and transparent processes
           </p>
         </motion.div>
       </div>

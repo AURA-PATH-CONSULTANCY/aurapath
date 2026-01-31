@@ -41,8 +41,8 @@ export const About = () => {
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ duration: 0.6 }}
           >
-            <span className="text-gold font-semibold tracking-wider text-sm uppercase">About Us</span>
-            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-navy mt-3 mb-6">
+            <span className="text-primary font-semibold tracking-wider text-sm uppercase">About Us</span>
+            <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6">
               Your Trusted Partner in
               <span className="text-gradient-gold block">Education Planning</span>
             </h2>
@@ -60,17 +60,17 @@ export const About = () => {
             {/* Stats */}
             <div className="flex gap-8">
               <div>
-                <p className="text-4xl font-serif font-bold text-navy">5+</p>
+                <p className="text-4xl font-serif font-bold text-primary">5+</p>
                 <p className="text-muted-foreground text-sm">Years Experience</p>
               </div>
               <div className="w-px bg-border" />
               <div>
-                <p className="text-4xl font-serif font-bold text-navy">98%</p>
+                <p className="text-4xl font-serif font-bold text-primary">98%</p>
                 <p className="text-muted-foreground text-sm">Success Rate</p>
               </div>
               <div className="w-px bg-border" />
               <div>
-                <p className="text-4xl font-serif font-bold text-navy">24/7</p>
+                <p className="text-4xl font-serif font-bold text-primary">24/7</p>
                 <p className="text-muted-foreground text-sm">Support</p>
               </div>
             </div>
@@ -89,12 +89,12 @@ export const About = () => {
                 initial={{ opacity: 0, y: 20 }}
                 animate={isInView ? { opacity: 1, y: 0 } : {}}
                 transition={{ duration: 0.5, delay: 0.3 + index * 0.1 }}
-                className="bg-card p-6 rounded-xl shadow-card-hover border border-border/50 group"
+                className="bg-card p-6 rounded-xl shadow-card-hover border border-border group"
               >
-                <div className="w-12 h-12 bg-gold/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-gold/20 transition-colors">
-                  <value.icon className="w-6 h-6 text-gold" />
+                <div className="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <value.icon className="w-6 h-6 text-primary" />
                 </div>
-                <h3 className="font-serif font-semibold text-lg text-navy mb-2">{value.title}</h3>
+                <h3 className="font-serif font-semibold text-lg text-foreground mb-2">{value.title}</h3>
                 <p className="text-muted-foreground text-sm leading-relaxed">{value.description}</p>
               </motion.div>
             ))}

@@ -16,12 +16,12 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         // Premium variants
-        gold: "bg-gold-gradient text-primary-foreground font-semibold shadow-gold hover:shadow-elevated hover:scale-[1.02] active:scale-[0.98]",
-        navy: "bg-navy text-primary-foreground font-semibold shadow-soft hover:bg-navy-light hover:shadow-card",
-        "outline-gold": "border-2 border-gold text-gold bg-transparent hover:bg-gold hover:text-primary-foreground font-semibold",
-        "outline-light": "border-2 border-primary-foreground/30 text-primary-foreground bg-transparent hover:bg-primary-foreground/10 font-medium",
-        hero: "bg-gold-gradient text-navy-dark font-bold shadow-gold hover:shadow-elevated hover:scale-[1.02] active:scale-[0.98] text-base",
-        "hero-outline": "border-2 border-gold-light/50 text-cream bg-transparent hover:bg-cream/10 font-semibold text-base backdrop-blur-sm",
+        gold: "bg-gold-gradient text-white font-semibold shadow-gold hover:shadow-elevated hover:scale-[1.02] active:scale-[0.98]",
+        navy: "bg-secondary text-secondary-foreground font-semibold shadow-soft hover:bg-secondary/80 hover:shadow-card",
+        "outline-gold": "border-2 border-primary text-primary bg-transparent hover:bg-primary hover:text-primary-foreground font-semibold",
+        "outline-light": "border-2 border-foreground/30 text-foreground bg-transparent hover:bg-foreground/10 font-medium",
+        hero: "bg-gold-gradient text-white font-bold shadow-gold hover:shadow-elevated hover:scale-[1.02] active:scale-[0.98] text-base",
+        "hero-outline": "border-2 border-primary/50 text-foreground bg-transparent hover:bg-primary/10 font-semibold text-base backdrop-blur-sm",
       },
       size: {
         default: "h-10 px-4 py-2",

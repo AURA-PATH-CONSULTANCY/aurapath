@@ -36,19 +36,19 @@ export const Header = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-navy text-cream py-2 text-sm hidden md:block">
+      <div className="bg-secondary text-foreground py-2 text-sm hidden md:block border-b border-border">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <a href="tel:+910000000000" className="flex items-center gap-2 hover:text-gold transition-colors">
+            <a href="tel:+910000000000" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Phone className="w-4 h-4" />
               <span>+91 0000000000</span>
             </a>
-            <a href="mailto:contact@aurapathedu.in" className="flex items-center gap-2 hover:text-gold transition-colors">
+            <a href="mailto:contact@aurapathedu.in" className="flex items-center gap-2 hover:text-primary transition-colors">
               <Mail className="w-4 h-4" />
               <span>contact@aurapathedu.in</span>
             </a>
           </div>
-          <p className="text-gold font-medium">📢 Admissions Open 2026–2027</p>
+          <p className="text-primary font-medium">📢 Admissions Open 2026–2027</p>
         </div>
       </div>
 
@@ -58,8 +58,8 @@ export const Header = () => {
         animate={{ y: 0 }}
         className={`sticky top-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-card/95 backdrop-blur-md shadow-card"
-            : "bg-card"
+            ? "bg-card/95 backdrop-blur-md shadow-card border-b border-border"
+            : "bg-card border-b border-border"
         }`}
       >
         <div className="container mx-auto px-4">
@@ -74,7 +74,7 @@ export const Header = () => {
                 />
               </div>
               <div className="hidden sm:block">
-                <h1 className="font-serif font-bold text-navy text-lg leading-tight group-hover:text-gold transition-colors">
+                <h1 className="font-serif font-bold text-foreground text-lg leading-tight group-hover:text-primary transition-colors">
                   AURA PATH CONSULTANCY ✔️
                 </h1>
               </div>
@@ -86,10 +86,10 @@ export const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-foreground/80 hover:text-navy font-medium transition-colors relative group"
+                  className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
                 >
                   {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gold transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
                 </button>
               ))}
             </nav>
@@ -107,9 +107,9 @@ export const Header = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6 text-navy" />
+                <X className="w-6 h-6 text-foreground" />
               ) : (
-                <Menu className="w-6 h-6 text-navy" />
+                <Menu className="w-6 h-6 text-foreground" />
               )}
             </button>
           </div>
@@ -128,7 +128,7 @@ export const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-foreground/80 hover:text-navy font-medium py-2 text-left"
+                  className="text-foreground/80 hover:text-primary font-medium py-2 text-left"
                 >
                   {link.name}
                 </button>

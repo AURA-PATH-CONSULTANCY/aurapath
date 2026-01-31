@@ -39,10 +39,10 @@ export const WhatsAppButton = () => {
       <motion.div
         initial={{ opacity: 0, x: 10 }}
         whileHover={{ opacity: 1, x: 0 }}
-        className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-navy text-cream text-sm px-3 py-2 rounded-lg whitespace-nowrap shadow-lg hidden lg:block pointer-events-none"
+        className="absolute right-full mr-3 top-1/2 -translate-y-1/2 bg-card text-foreground text-sm px-3 py-2 rounded-lg whitespace-nowrap shadow-lg hidden lg:block pointer-events-none border border-border"
       >
         Instant Support on WhatsApp
-        <span className="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-navy" />
+        <span className="absolute left-full top-1/2 -translate-y-1/2 border-8 border-transparent border-l-card" />
       </motion.div>
     </motion.button>
   );
