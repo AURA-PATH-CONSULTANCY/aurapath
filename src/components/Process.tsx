@@ -56,8 +56,8 @@ export const Process = () => {
           transition={{ duration: 0.6 }}
           className="text-center max-w-3xl mx-auto mb-16"
         >
-          <span className="text-gold font-semibold tracking-wider text-sm uppercase">Admission Process</span>
-          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-navy mt-3 mb-6">
+          <span className="text-primary font-semibold tracking-wider text-sm uppercase">Admission Process</span>
+          <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6">
             Your Journey to
             <span className="text-gradient-gold block">Academic Excellence</span>
           </h2>
@@ -85,16 +85,16 @@ export const Process = () => {
               >
                 {/* Content */}
                 <div className={`flex-1 ${index % 2 === 0 ? "md:text-right md:pr-12" : "md:text-left md:pl-12"}`}>
-                  <div className={`bg-card p-6 rounded-xl shadow-card border border-border/50 inline-block ${index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"}`}>
-                    <span className="text-gold text-sm font-bold">Step {step.step}</span>
-                    <h3 className="font-serif font-semibold text-xl text-navy mt-2 mb-3">{step.title}</h3>
+                  <div className={`bg-card p-6 rounded-xl shadow-card border border-border inline-block ${index % 2 === 0 ? "md:ml-auto" : "md:mr-auto"}`}>
+                    <span className="text-primary text-sm font-bold">Step {step.step}</span>
+                    <h3 className="font-serif font-semibold text-xl text-foreground mt-2 mb-3">{step.title}</h3>
                     <p className="text-muted-foreground text-sm max-w-sm">{step.description}</p>
                   </div>
                 </div>
 
                 {/* Icon Circle */}
-                <div className="absolute left-0 sm:left-4 md:left-1/2 md:-translate-x-1/2 w-10 h-10 bg-navy rounded-full flex items-center justify-center shadow-lg z-10">
-                  <step.icon className="w-5 h-5 text-gold" />
+                <div className="absolute left-0 sm:left-4 md:left-1/2 md:-translate-x-1/2 w-10 h-10 bg-primary rounded-full flex items-center justify-center shadow-lg z-10">
+                  <step.icon className="w-5 h-5 text-primary-foreground" />
                 </div>
 
                 {/* Empty space for layout */}
