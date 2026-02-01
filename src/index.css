@@ -145,65 +145,71 @@
     background-color: hsl(var(--cream));
   }
 
-  /* Logo glow effects for pure black theme with blue accents */
+  /* Logo glow effects - Blue glow on white backgrounds */
   .logo-glow {
-    filter: drop-shadow(0 0 6px hsl(210 100% 50% / 0.5)) 
-            drop-shadow(0 0 12px hsl(210 100% 50% / 0.3))
-            drop-shadow(0 0 20px hsl(210 100% 50% / 0.2));
+    filter: drop-shadow(0 0 8px hsl(210 100% 50% / 0.6)) 
+            drop-shadow(0 0 16px hsl(210 100% 50% / 0.4))
+            drop-shadow(0 0 28px hsl(210 100% 50% / 0.25));
     transition: filter 0.4s ease, transform 0.3s ease;
   }
 
   .logo-glow:hover {
-    filter: drop-shadow(0 0 10px hsl(210 100% 50% / 0.7)) 
-            drop-shadow(0 0 18px hsl(210 100% 50% / 0.5))
-            drop-shadow(0 0 30px hsl(210 100% 50% / 0.3));
-    transform: scale(1.02);
+    filter: drop-shadow(0 0 12px hsl(210 100% 50% / 0.8)) 
+            drop-shadow(0 0 24px hsl(210 100% 50% / 0.6))
+            drop-shadow(0 0 40px hsl(210 100% 50% / 0.4));
+    transform: scale(1.05);
   }
 
-  /* Remove white background from logo */
-  .logo-no-bg {
-    mix-blend-mode: screen;
-    filter: brightness(1.1);
-  }
-
-  /* For footer - same as above in dark theme */
-  .logo-no-bg-dark {
-    mix-blend-mode: screen;
-    filter: brightness(1.1)
-            drop-shadow(0 0 6px hsl(210 100% 50% / 0.4)) 
-            drop-shadow(0 0 12px hsl(210 100% 50% / 0.3));
+  /* Subtle glow for footer */
+  .logo-glow-subtle {
+    filter: drop-shadow(0 0 6px hsl(210 100% 50% / 0.4)) 
+            drop-shadow(0 0 12px hsl(210 100% 50% / 0.25));
     transition: filter 0.4s ease, transform 0.3s ease;
   }
 
-  .logo-no-bg-dark:hover {
-    filter: brightness(1.2) 
-            drop-shadow(0 0 10px hsl(210 100% 50% / 0.6)) 
+  .logo-glow-subtle:hover {
+    filter: drop-shadow(0 0 10px hsl(210 100% 50% / 0.6)) 
             drop-shadow(0 0 20px hsl(210 100% 50% / 0.4));
-    transform: scale(1.02);
+    transform: scale(1.03);
   }
 
-  .logo-container {
+  /* Logo container with animated glow ring */
+  .logo-glow-container {
     position: relative;
   }
 
-  .logo-container::before {
+  .logo-glow-container::before {
     content: '';
     position: absolute;
-    inset: -12px;
-    background: radial-gradient(ellipse at center, hsl(210 100% 50% / 0.15) 0%, hsl(210 100% 50% / 0.05) 40%, transparent 70%);
+    inset: -16px;
+    background: radial-gradient(ellipse at center, hsl(210 100% 50% / 0.2) 0%, hsl(210 100% 50% / 0.08) 40%, transparent 70%);
     border-radius: 50%;
     z-index: -1;
     animation: pulseGlow 2.5s ease-in-out infinite;
   }
 
+  .logo-glow-container-subtle {
+    position: relative;
+  }
+
+  .logo-glow-container-subtle::before {
+    content: '';
+    position: absolute;
+    inset: -12px;
+    background: radial-gradient(ellipse at center, hsl(210 100% 50% / 0.12) 0%, hsl(210 100% 50% / 0.04) 40%, transparent 70%);
+    border-radius: 50%;
+    z-index: -1;
+    animation: pulseGlow 3s ease-in-out infinite;
+  }
+
   @keyframes pulseGlow {
     0%, 100% {
-      opacity: 0.4;
+      opacity: 0.5;
       transform: scale(1);
     }
     50% {
-      opacity: 0.8;
-      transform: scale(1.15);
+      opacity: 1;
+      transform: scale(1.2);
     }
   }
 }
