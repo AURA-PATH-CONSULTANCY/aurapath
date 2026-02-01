@@ -36,19 +36,19 @@ export const Header = () => {
   return (
     <>
       {/* Top Bar */}
-      <div className="bg-secondary text-foreground py-2 text-sm hidden md:block border-b border-border">
+      <div className="bg-gray-100 text-gray-600 py-2 text-sm hidden md:block border-b border-gray-200">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <a href="tel:+910000000000" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="tel:+910000000000" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
               <Phone className="w-4 h-4" />
               <span>+91 0000000000</span>
             </a>
-            <a href="mailto:contact@aurapathedu.in" className="flex items-center gap-2 hover:text-primary transition-colors">
+            <a href="mailto:contact@aurapathedu.in" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
               <Mail className="w-4 h-4" />
               <span>contact@aurapathedu.in</span>
             </a>
           </div>
-          <p className="text-primary font-medium">📢 Admissions Open 2026–2027</p>
+          <p className="text-gray-900 font-medium">📢 Admissions Open 2026–2027</p>
         </div>
       </div>
 
@@ -58,8 +58,8 @@ export const Header = () => {
         animate={{ y: 0 }}
         className={`sticky top-0 z-50 transition-all duration-300 ${
           isScrolled
-            ? "bg-card/95 backdrop-blur-md shadow-card border-b border-border"
-            : "bg-card border-b border-border"
+            ? "bg-white/95 backdrop-blur-md shadow-md border-b border-gray-200"
+            : "bg-white border-b border-gray-200"
         }`}
       >
         <div className="container mx-auto px-4">
@@ -74,7 +74,7 @@ export const Header = () => {
                 />
               </div>
               <div className="hidden sm:block">
-                <h1 className="font-serif font-bold text-foreground text-lg leading-tight group-hover:text-primary transition-colors">
+                <h1 className="font-serif font-bold text-gray-900 text-lg leading-tight group-hover:text-blue-600 transition-colors">
                   AURA PATH CONSULTANCY ✔️
                 </h1>
               </div>
@@ -86,10 +86,10 @@ export const Header = () => {
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-foreground/80 hover:text-primary font-medium transition-colors relative group"
+                  className="text-gray-600 hover:text-blue-600 font-medium transition-colors relative group"
                 >
                   {link.name}
-                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full" />
+                  <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all duration-300 group-hover:w-full" />
                 </button>
               ))}
             </nav>
@@ -107,9 +107,9 @@ export const Header = () => {
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
             >
               {isMobileMenuOpen ? (
-                <X className="w-6 h-6 text-foreground" />
+                <X className="w-6 h-6 text-gray-900" />
               ) : (
-                <Menu className="w-6 h-6 text-foreground" />
+                <Menu className="w-6 h-6 text-gray-900" />
               )}
             </button>
           </div>
@@ -121,14 +121,14 @@ export const Header = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: "auto" }}
             exit={{ opacity: 0, height: 0 }}
-            className="lg:hidden bg-card border-t"
+            className="lg:hidden bg-white border-t border-gray-200"
           >
             <nav className="container mx-auto px-4 py-4 flex flex-col gap-4">
               {navLinks.map((link) => (
                 <button
                   key={link.name}
                   onClick={() => scrollToSection(link.href)}
-                  className="text-foreground/80 hover:text-primary font-medium py-2 text-left"
+                  className="text-gray-600 hover:text-blue-600 font-medium py-2 text-left"
                 >
                   {link.name}
                 </button>
