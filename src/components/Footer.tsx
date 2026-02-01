@@ -1,5 +1,5 @@
 import { Phone, Mail, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
-import auraPathLogo from "@/assets/aura-path-logo-new.png";
+import auraPathLogo from "@/assets/aura-path-logo-main.png";
 
 const footerLinks = {
   services: [
@@ -35,14 +35,13 @@ export const Footer = () => {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-6 group cursor-pointer">
-              <div className="logo-container">
+              <div className="logo-container logo-glow-container-subtle">
                 <img 
                   src={auraPathLogo} 
                   alt="AURA PATH CONSULTANCY" 
-                  className="h-16 w-auto object-contain logo-no-bg-dark"
+                  className="h-20 w-auto object-contain logo-glow-subtle"
                 />
               </div>
-              <h3 className="font-serif font-bold text-xl text-gray-900 group-hover:text-blue-600 transition-colors">AURA PATH CONSULTANCY ✔️</h3>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
               India's Premier Educational Consultancy dedicated to helping students 
