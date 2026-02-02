@@ -58,7 +58,7 @@ export const WhyUs = () => {
         >
           <span className="text-primary font-semibold tracking-wider text-sm uppercase">Why Choose Us</span>
           <h2 className="font-serif text-3xl md:text-4xl lg:text-5xl font-bold text-foreground mt-3 mb-6">
-            The Aura Path
+            The AURA PATH ✔️
             <span className="text-gradient-gold block">Advantage</span>
           </h2>
           <p className="text-muted-foreground text-lg">
@@ -105,7 +105,7 @@ export const WhyUs = () => {
               ))}
             </div>
             <p className="text-foreground font-medium">
-              Join <span className="text-primary font-bold">1000+</span> students who chose Aura Path
+              Join <span className="text-primary font-bold">1000+</span> students who chose AURA PATH ✔️
             </p>
           </div>
         </motion.div>
