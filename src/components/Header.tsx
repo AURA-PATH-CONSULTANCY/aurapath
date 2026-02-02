@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X, Phone, Mail } from "lucide-react";
 import { Button } from "./ui/button";
-import auraPathLogo from "@/assets/aura-path-logo-main.png";
+import auraPathLogo from "@/assets/aura-path-logo-new.png";
 
 const navLinks = [
   { name: "Home", href: "#home" },
