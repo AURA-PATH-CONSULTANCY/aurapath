@@ -69,11 +69,10 @@ export const Header = () => {
               <div className="logo-container logo-glow-container">
                 <img 
                   src={auraPathLogo} 
-                  alt="AURA PATH CONSULTANCY ✔️" 
+                  alt="Aura Path Consultancy Logo" 
                   className="h-14 w-auto object-contain logo-glow"
                 />
               </div>
-              <span className="font-serif font-bold text-gray-900 text-lg hidden sm:block">AURA PATH CONSULTANCY ✔️</span>
             </a>
 
             {/* Desktop Navigation */}
