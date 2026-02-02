@@ -1,5 +1,5 @@
 import { Phone, Mail, Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
-import auraPathLogo from "@/assets/aura-path-logo-main.png";
+import auraPathLogo from "@/assets/aura-path-logo-new.png";
 
 const footerLinks = {
   services: [
