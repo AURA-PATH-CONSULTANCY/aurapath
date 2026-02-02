@@ -47,7 +47,7 @@ export const About = () => {
               <span className="text-gradient-gold block">Education Planning</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-6">
-              AURA PATH CONSULTANCY ✔️ is a leading educational consultancy dedicated to helping 
+              AURA PATH ✔️ is a leading educational consultancy dedicated to helping 
               students identify the right career path, gain clarity in education planning, 
               and secure admissions in top institutions in India and abroad.
             </p>

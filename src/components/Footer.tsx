@@ -38,11 +38,11 @@ export const Footer = () => {
               <div className="logo-container logo-glow-container-subtle">
                 <img 
                   src={auraPathLogo} 
-                  alt="AURA PATH CONSULTANCY ✔️" 
+                  alt="AURA PATH ✔️" 
                   className="h-20 w-auto object-contain logo-glow-subtle"
                 />
               </div>
-              <span className="font-serif font-bold text-gray-900 text-xl">AURA PATH CONSULTANCY ✔️</span>
+              <span className="font-serif font-bold text-gray-900 text-xl">AURA PATH ✔️</span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed mb-6">
               India's Premier Educational Consultancy dedicated to helping students 
@@ -122,7 +122,7 @@ export const Footer = () => {
         <div className="container mx-auto px-4 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-gray-500 text-sm">
-              © {new Date().getFullYear()} AURA PATH CONSULTANCY ✔️. All rights reserved.
+              © {new Date().getFullYear()} AURA PATH ✔️. All rights reserved.
             </p>
             <div className="flex gap-6">
               <span className="text-gray-500 text-sm hover:text-blue-600 transition-colors cursor-pointer">

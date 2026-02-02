@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import { MessageCircle } from "lucide-react";
 
 const WHATSAPP_NUMBER = "917483955647";
-const WHATSAPP_MESSAGE = "Hello! I'm interested in learning more about Aura Path Consultancy services.";
+const WHATSAPP_MESSAGE = "Hello! I'm interested in learning more about AURA PATH ✔️ services.";
 
 export const WhatsAppButton = () => {
   const handleWhatsAppClick = () => {
