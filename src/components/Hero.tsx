@@ -58,7 +58,7 @@ export const Hero = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-muted-foreground text-lg md:text-xl max-w-2xl mx-auto mb-8"
           >
-            End-to-End Dedicated Support by Team Aura Path. Helping students 
+            End-to-End Dedicated Support by Team AURA PATH CONSULTANCY ✔️. Helping students 
             identify the right career path and secure admissions in top institutions.
           </motion.p>
 

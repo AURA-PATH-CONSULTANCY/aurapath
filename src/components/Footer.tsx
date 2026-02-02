@@ -38,7 +38,7 @@ export const Footer = () => {
               <div className="logo-container logo-glow-container-subtle">
                 <img 
                   src={auraPathLogo} 
-                  alt="AURA PATH CONSULTANCY" 
+                  alt="AURA PATH CONSULTANCY ✔️" 
                   className="h-20 w-auto object-contain logo-glow-subtle"
                 />
               </div>

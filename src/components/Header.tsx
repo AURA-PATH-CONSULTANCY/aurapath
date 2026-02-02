@@ -69,7 +69,7 @@ export const Header = () => {
               <div className="logo-container logo-glow-container">
                 <img 
                   src={auraPathLogo} 
-                  alt="Aura Path Consultancy Logo" 
+                  alt="AURA PATH CONSULTANCY ✔️" 
                   className="h-14 w-auto object-contain logo-glow"
                 />
               </div>
