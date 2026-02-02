@@ -96,13 +96,13 @@ export const Footer = () => {
           <div>
             <h4 className="font-serif font-semibold text-lg mb-6 text-gray-900">Contact Us</h4>
             <div className="space-y-4">
-              <a href="tel:+910000000000" className="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition-colors">
+              <a href="tel:+917483955647" className="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition-colors">
                 <Phone className="w-5 h-5" />
-                <span className="text-sm">+91 0000000000</span>
+                <span className="text-sm">+91 7483955647</span>
               </a>
-              <a href="mailto:contact@aurapathedu.in" className="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition-colors">
+              <a href="mailto:contact@aurapathedu.com" className="flex items-center gap-3 text-gray-500 hover:text-blue-600 transition-colors">
                 <Mail className="w-5 h-5" />
-                <span className="text-sm">contact@aurapathedu.in</span>
+                <span className="text-sm">contact@aurapathedu.com</span>
               </a>
             </div>
 

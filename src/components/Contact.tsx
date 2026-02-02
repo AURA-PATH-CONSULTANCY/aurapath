@@ -38,7 +38,7 @@ export const Contact = () => {
             {/* Contact Details */}
             <div className="space-y-6">
               <a
-                href="tel:+910000000000"
+                href="tel:+917483955647"
                 className="flex items-center gap-4 group"
               >
                 <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center group-hover:bg-accent transition-colors duration-300">
@@ -46,12 +46,12 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Phone</p>
-                  <p className="text-lg font-semibold text-foreground">+91 0000000000</p>
+                  <p className="text-lg font-semibold text-foreground">+91 7483955647</p>
                 </div>
               </a>
 
               <a
-                href="mailto:contact@aurapathedu.in"
+                href="mailto:contact@aurapathedu.com"
                 className="flex items-center gap-4 group"
               >
                 <div className="w-14 h-14 bg-primary rounded-xl flex items-center justify-center group-hover:bg-accent transition-colors duration-300">
@@ -59,7 +59,7 @@ export const Contact = () => {
                 </div>
                 <div>
                   <p className="text-sm text-muted-foreground">Email</p>
-                  <p className="text-lg font-semibold text-foreground">contact@aurapathedu.in</p>
+                  <p className="text-lg font-semibold text-foreground">contact@aurapathedu.com</p>
                 </div>
               </a>
 
