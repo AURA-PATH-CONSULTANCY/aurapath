@@ -39,13 +39,13 @@ export const Header = () => {
       <div className="bg-gray-100 text-gray-600 py-2 text-sm hidden md:block border-b border-gray-200">
         <div className="container mx-auto px-4 flex justify-between items-center">
           <div className="flex items-center gap-6">
-            <a href="tel:+910000000000" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
+            <a href="tel:+917483955647" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
               <Phone className="w-4 h-4" />
-              <span>+91 0000000000</span>
+              <span>+91 7483955647</span>
             </a>
-            <a href="mailto:contact@aurapathedu.in" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
+            <a href="mailto:contact@aurapathedu.com" className="flex items-center gap-2 hover:text-blue-600 transition-colors">
               <Mail className="w-4 h-4" />
-              <span>contact@aurapathedu.in</span>
+              <span>contact@aurapathedu.com</span>
             </a>
           </div>
           <p className="text-gray-900 font-medium">📢 Admissions Open 2026–2027</p>
